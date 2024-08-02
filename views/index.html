@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manual do usuário para o produto XReader by PONFAC">
+  <meta name="author" content="João Pedro Telles Fava">
+  <title>XReader - Manual do Usuário</title>
+  <!-- Bootrstrapp Library -->
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- CSS Style -->
+  <link href="../public/css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-body-tertiary">
+  <header class="bd-header bg-dark py-0 d-flex align-items-stretch border-bottom border-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex align-items-center">
+        <a class="navbar-brand d-flex" href="#introduction">
+          <img src="../assets/brand/xreader08.png" width="85" class="me-3" alt="XReader Logo">
+          <h1 class="display-5 mb-0">XReader</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#introduction" data-bs-toggle="dropdown">Introdução</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about">Sobre o Produto</a></li>
+                <li><a class="dropdown-item" href="#components">Componentes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#consumidor" data-bs-toggle="dropdown">Consumidor</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#tela_inicial_cons">Iniciando o sistema</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#operador" data-bs-toggle="dropdown">Operador</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#tela_inicial_op">Sistema XReader</a></li>
+                <li><a class="dropdown-item" href="#sistema_caixa">Sistema de Caixa</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#problems" data-bs-toggle="dropdown">Resolvendo Problemas</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#errors">Sistema</a></li>
+                <li><a class="dropdown-item" href="#errors_equip">Equipamentos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item" id="contact">
+              <a class="nav-link" href="https://wa.me/5551995791924">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
+    <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">Nesta página</h2>
+    <nav class="small" id="toc">
+      <ul class="list-unstyled">
+        <li class="my-2">
+          <button type="button" class="btn d-inline-flex align-items-center collapsed border-0"
+            data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#introduction-collapse"
+            aria-controls="introduction-collapse">Introdução</button>
+          <ul class="list-unstyled ps-3 collapse" id="introduction-collapse">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#about">Sobre o
+                produto</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#components">Componentes</a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button type="button" class="btn d-inline-flex align-items-center collapsed border-0"
+            data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#consumidor-collapse"
+            aria-controls="consumidor-collapse">Consumidor</button>
+          <ul class="list-unstyled ps-3 collapse" id="consumidor-collapse">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#tela_inicial_cons">Iniciando o sistema</a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button type="button" class="btn d-inline-flex align-items-center collapsed border-0"
+            data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#operador-collapse"
+            aria-controls="operador-collapse">Operador</button>
+          <ul class="list-unstyled ps-3 collapse" id="operador-collapse">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#tela_inicial_op">Sistema
+                XReader</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#sistema_caixa">Sistema
+                de Caixa</a>
+            </li>
+          </ul>
+        </li>
+        <li class="my-2">
+          <button type="button" class="btn d-inline-flex align-items-center collapsed border-0"
+            data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#errors-collapse"
+            aria-controls="errors-collapse">Resolvendo Problemas</button>
+          <ul class="list-unstyled ps-3 collapse" id="errors-collapse">
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#errors">
+                Sistema</a>
+            </li>
+            <li><a class="d-inline-flex align-items-center rounded text-decoration-none"
+                href="#errors_equip">Equipamentos</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="bd-cheatsheet container-fluid bg-body">
+    <section id="introduction">
+      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Introdução</h2>
+      <article class="my-1" id="about">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Sobre o Produto</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-1 m-0 border-0">
+              <h2 class="display-1">Manual do Usuário</h2>
+              <p class="lead">Este Manual tem como objetivo auxiliar os usuários do XReader aos apresentar: o
+                funcionamento, manutenção preventiva e resolução de possíveis erros.</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-1 m-0 border-0">
+              <h2 class="display-3">O que é o XReader?</h2>
+              <p class="lead">
+                XReader é um self-checkout diferente, que permite vendas de compras pequenas até compras em maior
+                quantidade, realiza a checagem dos produtos por leitura de código de barras e a imagem do produto,
+                independentemente da posição que o produto é colocado na esteira. Ele proporciona a redução dos
+                movimentos repetitivos dos operadores de caixa, reduzindo seu esforço físico ao longo do dia. Sua
+                esteira é mais veloz, permitindo assim uma maior produtividade e agilidade no processo de compra,
+                melhorando assim a experiência dos clientes.
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-1 m-0 border-0">
+              <h2 class="display-3">Design Geral</h2>
+              <img src="../assets/img/XReader - Design/2019-03-12_13-16-18.jpg" class="img-fluid"
+                alt="XReader Design Visão Geral">
+            </div>
+          </div>
+
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <h2 class="display-3">Como é o Produto?</h2>
+              <p class="lead">
+                Todo produto XReader contém os seguintes itens:
+              </p>
+              <ul class="list-group mb-2">
+                <li class="list-group-item">Tela do usuário (Cliente).</li>
+                <li class="list-group-item">Esteira para passagem dos produtos por parte do cliente.</li>
+                <li class="list-group-item">Portal de leitura de código de barras e identificação do produto.</li>
+                <li class="list-group-item">Área para embalagem dos produtos.</li>
+                <li class="list-group-item">Monitor vertical com informações de cada produto lido.</li>
+                <li class="list-group-item">Tela do operador de caixa para exibir o Sistema PDV.</li>
+              </ul>
+              <img src="../assets/img/3.jpg" class="img-fluid" alt="XReader Visão Geral">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <h2 class="display-3">Área do Cliente</h2>
+              <p class="lead">
+                Área destinada ao cliente para colocação de produtos e inserção de informações para pagamento (ver seção
+                <a href="#consumidor">Consumidor</a>):
+              </p>
+              <img src="../assets/img/6.jpg" class="img-fluid" alt="XReader Visão Geral">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <h2 class="display-3">Área do Operador</h2>
+              <p class="lead">
+                Área destinada ao operador de caixa. Nela é possível controlar o equipamento e acessar as informações de
+                cada produto lido pelo XReader (ver seção Operador), bem como o sistema PDV padrão do estabelecimento:
+              </p>
+              <img src="../assets/img/11.jpg" class="img-fluid" alt="XReader Visão Geral">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="my-1" id="components">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Componentes</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <h2 class="display-2">Componentes</h2>
+              <h2 class="display-3">Esteira</h2>
+              <p class="lead">Todos os produtos a serem lidos pelo <b>XReader</b> devem ser postos sobre a esteira
+                observando a seguinte orientação : "PRODUTOS <strong>DEITADOS</strong>,
+                <strong>CENTRALIZADOS</strong> e
+                <strong>ESPAÇADOS</strong>". isso facilitará toda a operação e dará mais agilidade para o cliente. O
+                vídeo abaixo é um exemplo de utilização:
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <video id="esteira-video" src="../assets/video/XReader - Esteira.mp4" class="object-fit-cover"
+                type="video/mp4" controls autoplay muted loop></video>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <h2 class="display-3">Portal de Leitura</h2>
+              <p class="lead">Ao todo, o XReader possui 21 câmeras que fazem a leitura dos códigos de barra dos produtos
+                e o reconhecimento do sua respectiva imagem, caso o sistema não consiga compreender qual é o produto,
+                ele irá gerar uma tela de alarme para o operador identificar o produto.</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <div id="carouselPortalDeLeitura" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselPortalDeLeitura" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselPortalDeLeitura" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselPortalDeLeitura" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/XReader - Design/XReader-Portal-1.jpg" class="d-block w-100"
+                      alt="XReader Portal de Leitura - Imagem 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/XReader - Design/XReader-Portal-2.jpg" class="d-block w-100"
+                      alt="XReader Portal de Leitura - Imagem 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/XReader - Design/XReader-Portal-3.jpg" class="d-block w-100"
+                      alt="XReader Portal de Leitura - Imagem 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortalDeLeitura"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPortalDeLeitura"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próxima</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <h2 class="display-3">Tela do Operador de Caixa</h2>
+              <p class="lead">O XReader disponibiliza ao operador de caixa, dois monitores: um posicionado
+                horizontalmente e o outro verticalmente. O monitor disposto horizontalmente apresenta o sistema PDV
+                (sistema de frente de caixa) do seu supermercado.
+                Já o monitor vertical apresenta ao operador o reconhecimento do produto lido pelo XReader e permito o
+                operador controlar o processo de venda do cliente.
+              </p>
+              <img src="../assets/img/XReader - Tela Operador-2.png" class="img-fluid" alt="XReader Tela do Operador">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="consumidor">
+      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Consumidor</h2>
+      <article class="my-1" id="tela_inicial_cons">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Iniciando o Sistema</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-2 m-0 border-0">
+              <h2 class="display-3">Tela do Consumidor</h2>
+              <p class="lead">O XReader possui um monitor de uso do consumidor. Nele, o cliente será apresentado a
+                seguinte tela inicial quando o XReader estiver livre para iniciar o processo de compras.</p>
+              <img src="../assets/img/Tela-Consumidor-1.png" alt="Tela do Consumidor 1" class="img-fluid">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-2 m-0 border-0">
+              <p class="lead">Após o toque na tela inicial (imagem acima), o cliente deve inserir as informações
+                complementares iniciais para realização da compra:</p>
+              <div id="carouselTelaConsumidor" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/Tela-Consumidor-4.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/Tela-Consumidor-2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/Tela-Consumidor-3.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTelaConsumidor"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTelaConsumidor"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-2 m-0 border-0">
+              <p class="lead">Após inserir as informações complementares, a esteira do XReader é acionada e os produtos
+                devem ser disponibilizados para leitura, seguinte a regra de orientação “
+                <b>DEITADOS</b>,<b>CENTRALIZADOS</b> e
+                <b>ESPAÇADOS</b>”. A tela abaixo é apresentada ao consumidor:
+              </p>
+              <img src="../assets/img/Tela do Consumidor-6.png" class="img-fluid" alt="Tela do Consumidor 2">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-2 m-0 border-0">
+              <p class="lead">Uma vez que todos os produtos forem lidos e confirmados pelo operador, o cliente poderá
+                indicar a finalização da compra e seguir com as opções desejadas para efetuar o pagamento da compra. O
+                sistema do consumidor do XReader disponibiliza as seguintes opções:</p>
+              <ul class="list-group mb-3">
+                <li class="list-group-item">Método de pagamento via cartão de crédito</li>
+                <li class="list-group-item">Método de pagamento via cartão de débito</li>
+                <li class="list-group-item">Método de pagamento via PIX</li>
+              </ul>
+              <div id="carouselTelaConsumidor2" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/img/Tela-Consumidor-11.png" class="d-block w-100" alt="Tela do Consumidor 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/Tela-Consumidor-7.png" class="d-block w-100" alt="Tela do Consumidor 4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/Tela-Consumidor-8.png" class="d-block w-100" alt="Tela do Consumidor 5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/img/Tela-Consumidor-9.png" class="d-block w-100" alt="Tela do Consumidor 6">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTelaConsumidor2"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTelaConsumidor2"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-2 m-0 border-0">
+              <p class="lead">Enquanto o cliente empacota os produtos, a tela abaixo é disponibilizada ao próximo
+                cliente informando que o caixa está ocupado e que ele(a) deve aguardar a liberação por parte do operador
+                de caixa.</p>
+              <img src="../assets/img/Tela do Consumidor-4.png" class="img-fluid" alt="Tela do Consumidor 7">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="operador">
+      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Operador</h2>
+      <article class="my-1" id="tela_inicial_op">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Sistema XReader</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-3 m-0 border-0">
+              <h2 class="display-3">Tela do Operador - Sistema XReader</h2>
+              <p class="lead">A tela inicial do monitor vertical do operador, apresenta as seguintes informações quando
+                está em modo "aguardando nova compra". Este é o modo padrão de todo XReader quando o sistema está
+                aguardando por um novo processo de compra (que será iniciado pelo consumidor), uma vez que esta tela é
+                apresentada ao operador, é possível continuar com a operação.</p>
+              <img src="../assets/img/Tela do Operador-2.png" class="img-fluid" alt="Tela do Operador 1">
+            </div>
+          </div>
+
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-3 m-0 border-0">
+              <p class="lead">Uma vez que a compra é iniciada, a tela do operador sinaliza seu status atual e aguarda o
+                cliente preencher suas informações de compra. (Ver sessão <a href="#consumidor">Consumidor</a>).</p>
+              <img src="../assets/img/Tela do Operador-1.png" class="img-fluid" alt="Tela do Operador 2">
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-3 m-0 border-0">
+              <p class="lead">
+                Após a compra ser iniciada pelo consumidor, a esteira é acionada. Os produtos que são lidos pelo sistema
+                de identificação de código de barras do XReader são apresentados na tela abaixo.
+              </p>
+              <img src="../assets/img/Tela de Alerta.jpg" class="img-fluid" alt="Tela do Operador 3">
+              <p class="lead">
+                Quando o sistema do XReader detecta um produto que passou por dentro da área de leitura, mas não foi
+                identificado, ele irá gerar uma tela de alarme para o Operador identificar aquele produto. Nesta tela é
+                apresentada a foto do produto que passou pelo XReader e logo abaixo, o sistema sugere os 5 produtos mais
+                similares ao produto da foto, permitindo que o Operador possa confirmar a leitura através de um rápido
+                toque na tela. Caso o produto não esteja entre os 5, o operador deverá realizar a leitura manual com o
+                leitor manual disposto na região de empacotamento.
+              </p>
+              <img src="../assets/img/Tela do Operador-3.png" class="img-fluid" alt="Tela do Operador 4">
+              <p class="lead">Possibiltando ao operador um controle maior de quais produtos estão sendo efetivamente
+                identificados durante a compra.</p>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-3 m-0 border-0">
+              <p class="lead">Após a identificação de todos os produtos, o sistema disponibiliza ao consumidor o sistema
+                para pagamento da compra. Uma vez que esse processo é iniciado, a tela do operador do XReader é
+                alterada:</p>
+              <img src="../assets/img/Tela do Operador-4.png" class="img-fluid" alt="Tela do Operador 4">
+              <p class="lead">Uma vez que o pagamento é efetuado e o sistema de frente de caixa do estabelecimento é
+                liberado. O sistema do XReader é liberado para a realização de uma nova compra e a tela incial é
+                disponibilizada novamente.</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-3 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="my-1" id="sistema_caixa">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Sistema de Caixa</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-4 m-0 border-0">
+              <h2 class="display-3">Sistema de Frente de Caixa</h2>
+              <p class="lead">O XReader disponibiliza o espaço para fixação do monitor do sistema PDV, para que o
+                operador possa acompanhar o processo de compra e também possa realizar qualquer ação de forma manual no
+                sistema PDV.
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="problems">
+      <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Problemas</h2>
+      <article class="my-1" id="errors">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Sistema</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+              <h2 class="display-3">Resolvendo Problemas</h2>
+              <h3 class="display-5">Monitor do operador está com tela preta</h3>
+              <p class="lead">Ao acontecer este problema, a aplicação não inicializa no sistema do XReader no monitor do
+                operador e a tela
+                apresenta imagem preta estática.</p>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Verificar se os LEDs (indicar por foto o estado correto dos Leds do monitor), se estiver
+                OK, desligar o equipamento na chave geral, esperar 10s e ligar novamente.</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+              <h3 class="display-5">Monitor do operador está com tela azul</h3>
+              <p class="lead">Ao acontecer este problema, a aplicação não inicializa no sistema do XReader no monitor do
+                operador e a tela
+                apresenta imagem azul estática.</p>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Quando a tela do operador esta preta ou aparece uma mensagem de reinicialização do
+                Windows, o operador deve clicar em “Reiniciar meu computador”. Caso este problema surja de forma
+                recorrente, desligue o equipamento e entre em contato com o serviço de suporte da Ponfac</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+              <h3 class="display-5">Mensagem de erro na tela do operador.</h3>
+              <p class="lead">Ao acontecer este problema, a aplicação não inicializa no sistema do XReader no monitor do
+                operador e a tela
+                apresenta mensagem de erro.</p>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Se aparecer a tela acima, clique em OK, desligue o sistema na chave geral, aguarde 10s e
+                ligue novamente a chave geral. Caso este problema surja de forma recorrente, desligue o equipamento e
+                entre em contato com o serviço de suporte da Ponfac.</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+              <h3 class="display-5">Produtos não estão sendo apresentados no monitor do operador.</h3>
+              <p class="lead">Ao acontecer este problema, os produtos lidos pelo XReader não são apresentados no monitor
+                do operador.</p>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Reinicie a operação por meio das opções fornecidas no sistema XReader da tela do operador.
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+              <h3 class="display-5">Alerta de pouco espaço em disco de memória no sistema.</h3>
+              <p class="lead">Ao acontecer este problema, o monitor
+                do operador apresenta alerta de pouco espaço no disco de memória.</p>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Quando a tela do operador apresentar este tipo de mensagem, operador deve clicar em
+                “Reiniciar” no sistema. Caso este problema surja de forma recorrente, desligue o equipamento e entre em
+                contato com o serviço de suporte da Ponfac.
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-5 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="my-1" id="errors_equip">
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+          <h3>Equipamentos</h3>
+        </div>
+        <div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+              <h3 class="display-5">Luzes internas não estão ligando.</h3>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Verifique se a chave geral está ligada, se estiver, desligue o equipamento e entre em
+                contato com o serviço de suporte da Ponfac.</p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+              <h3 class="display-5">Esteira não está sendo acionada.</h3>
+              <p class="lead">Ao acontecer este problema, as luzes internas do XReader ligam.</p>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead"><b>Solução 1:</b> Verificar se o botão de emergência não está acionado por engano. Se não
+                estiver, vá para a solução 2. </p>
+              <p class="lead">
+                <b>Solução 2:</b> Desligue o sistema na chave geral, aguarde 10s e ligue novamente. Caso este problema
+                surja de
+                forma recorrente, desligue o equipamento e entre em contato com o serviço de suporte da Ponfac.
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+
+              <h3 class="display-5">Leitor de registro manual não realiza leitura do produto.</h3>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Reconecte o cabo USB de conexão do leitor, conforme a imagem indicada. Caso este problema
+                surja de forma recorrente, desligue o equipamento e entre em contato com o serviço de suporte da Ponfac
+              </p>
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+
+              <hr>
+
+            </div>
+          </div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example-6 m-0 border-0">
+
+              <h3 class="display-5">Touchscreen do monitor não responde.</h3>
+              <h3 class="display-5">Como resolver?</h3>
+              <p class="lead">Reconecte o cabo USB de conexão do monitor e o de alimentação, conforme a imagem indicada.
+                Caso este problema surja de forma recorrente, desligue o equipamento e entre em contato com o serviço de
+                suporte da Ponfac.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="../public/js/color-modes.js"></script>
+  <script src="../public/js/index.js"></script>
+</body>
+
+</html>
