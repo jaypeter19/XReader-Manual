@@ -1,2 +1,2 @@
-# XReader_Manual
-Manual do usuário do produto XReader by Ponfac
+# XReader Manual do Usuário
+Manual do usuário do produto XReader by Ponfac SA.
